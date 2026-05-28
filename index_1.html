@@ -1,0 +1,1865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Derek Walcott — Selected Poems · BFI Révisions</title>
+  <script crossorigin src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js"></script>
+  <script crossorigin src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; background: #0d1117; }
+    #root { height: 100%; }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #080d10; }
+    ::-webkit-scrollbar-thumb { background: #2a3a2a; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #3a5a3a; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    // Provide React globals expected by the compiled output
+    var React = window.React;
+    var ReactDOM = window.ReactDOM;
+  </script>
+  <script>
+const poems = [{
+  id: 1,
+  title: "Ruins of a Great House",
+  year: "1956",
+  overview: "Standing before the decayed ruins of a colonial plantation house, the poet meditates on the legacy of empire, guilt, and his ambivalent position as a man of mixed heritage. Through a mosaic of intertextual references, Walcott moves from rage to a hard-won compassion.",
+  mainIdeas: [{
+    idea: "Decay of empire as moral and physical ruin",
+    detail: "The crumbling plantation house becomes a metaphor for the rotting legacy of British colonialism — its grandeur gone, leaving only guilt and rubble."
+  }, {
+    idea: "Intertextuality as fragmented identity",
+    detail: "The poem is a 'disjecta membra' of other writers (Browne, Donne, Shakespeare, Kipling), mirroring the poet's fractured inheritance from two cultures."
+  }, {
+    idea: "The tension between rage and compassion",
+    detail: "The speaker oscillates between fury at colonial crimes and a wider human compassion that unsettles easy moral positions."
+  }, {
+    idea: "History as perpetual presence",
+    detail: "The ruins do not allow the past to rest; history seeps upward like the smell of dead limes — inescapable, physical, immediate."
+  }],
+  techniques: [{
+    name: "Intertextuality / Allusion",
+    example: "Epigraph from Browne's Urn Burial; Shakespeare's 'Nook-shotten, rook o'erblown'; Kipling; Donne; Hawkins, Raleigh, Drake",
+    effect: "The poem is assembled from fragments of the literary tradition it critiques — Walcott inhabits and challenges it simultaneously."
+  }, {
+    name: "Latin ('disjecta membra')",
+    example: "'Stones only, the disjecta membra of this Great House'",
+    effect: "Invokes a pre-British imperial past (Rome), suggesting all empires crumble — the British are not unique, just the latest."
+  }, {
+    name: "Olfactory imagery",
+    example: "'A smell of dead limes quickens in the nose / The leprosy of empire.'",
+    effect: "Makes the colonial legacy visceral and inescapable — it is literally in the air the speaker breathes."
+  }, {
+    name: "Fragmented form + ellipsis",
+    example: "Irregular stanzas; trailing ellipsis at the end",
+    effect: "The form mirrors the ruins; the ellipsis suggests history is unfinished, still haunting."
+  }, {
+    name: "Volta / emotional shift",
+    example: "From 'Ablaze with rage I thought' to 'All in compassion ends'",
+    effect: "The poem performs the speaker's journey — rage gives way to a troubling, hard-won empathy."
+  }],
+  metaphors: [{
+    metaphor: "'the leprosy of empire'",
+    analysis: "Colonialism as a disfiguring, contagious disease — corrupting coloniser and colonised alike, leaving visible scars on the landscape."
+  }, {
+    metaphor: "'the charnel galleon's text'",
+    analysis: "The slave ship as a document of death; the trade winds that powered empire also powered the Middle Passage."
+  }, {
+    metaphor: "'the coal of my compassion'",
+    analysis: "Empathy as something burning inside the speaker — painful, smouldering, but also capable of generating light."
+  }],
+  quotes: ["Stones only, the disjecta membra of this Great House", "A smell of dead limes quickens in the nose / The leprosy of empire.", "What Kipling heard, the death of a great empire, the abuse / Of ignorance by Bible and by sword.", "Ablaze with rage I thought, / Some slave is rotting in this manorial lake", "Albion too was once / A colony like ours, part of the continent, piece of the main", "All in compassion ends / So differently from what the heart arranged"],
+  themes: [{
+    name: "Colonialism",
+    explanation: "The entire poem is structured around the physical and moral ruins of a colonial plantation. The 'Great House' embodies the colonial project: its decay signals the end of empire, but the 'leprosy' it has spread remains. 'Ignorance by Bible and by sword' catalogues colonial crimes, making colonialism both the subject and the very landscape of the poem."
+  }, {
+    name: "History",
+    explanation: "History here is not abstract but physical — it rises from the earth as the smell of dead limes. The names of historical figures (Hawkins, Raleigh, Drake, Kipling, Donne) people the ruins, refusing to let the past be past. The Latin 'disjecta membra' reaches beyond Britain to Rome, placing British imperialism in a longer history of empires that all, eventually, crumble."
+  }, {
+    name: "Guilt",
+    explanation: "Guilt pervades the poem at multiple levels: the colonisers' guilt ('From guilt, perhaps, but not from the worm's rent'), and the speaker's troubling compassion for the oppressors ('Albion too was once / A colony like ours'). The poem refuses moral simplicity — guilt is shared, complicated, and unresolvable."
+  }, {
+    name: "Power",
+    explanation: "Power in all its forms is explored: the military power of 'ancestral murderers' (Hawkins, Raleigh, Drake), the cultural power of the English literary canon (Donne, Kipling), and the power of nature to erase human grandeur. 'The imperious rakes are gone' — power, however absolute, is temporary."
+  }, {
+    name: "Suffering",
+    explanation: "The poem holds the suffering of the enslaved at its centre: 'Some slave is rotting in this manorial lake'. The 'charnel galleon' and 'ulcerous crime' make the human cost of empire concrete. Suffering is not merely historical — the smell of dead limes keeps it present in the speaker's body."
+  }, {
+    name: "The Writer",
+    explanation: "Walcott places himself within the Western literary tradition even as he interrogates it. His 'eyes burned from the ashen prose of Donne' — he is formed by the very culture he critiques. To write in English is to inhabit the coloniser's language, yet that language is also his instrument of resistance."
+  }, {
+    name: "The Caribbean",
+    explanation: "The Caribbean landscape — its limes, its eucalyptus, its lizards — is made to carry historical weight. The 'Great House' is specifically Caribbean, its decay particular to the post-colonial West Indies. The poem insists that Caribbean geography is inseparable from the history of slavery and empire."
+  }, {
+    name: "The Passage of Time",
+    explanation: "'Deciduous beauty prospered and is gone'. The river flows on, 'obliterating hurt'. Yet the ruins resist total erasure — the smell lingers, the names persist. Time passes but does not cleanse; it merely changes the form in which history haunts the present."
+  }],
+  form: "Irregular free verse with intertextual fragments; epigraph from Sir Thomas Browne; ends with ellipsis suggesting continuity. The fragmentation of form mirrors the 'ruins' — both empire and the poet's identity are assembled from scattered pieces."
+}, {
+  id: 2,
+  title: "The Almond Trees",
+  year: "1969",
+  overview: "On a Caribbean beach, the poet observes twisted sea-almond trees and sunbathing tourists. Through an extended metaphor of trees as survivors of historical fire, Walcott meditates on the way the natural landscape silently carries the weight of colonial history — and the moment when the present recognises the past.",
+  mainIdeas: [{
+    idea: "Nature as historical memory",
+    detail: "The almond trees are living witnesses to slavery — their scorched, coppery bark encodes what official history has erased."
+  }, {
+    idea: "Metamorphosis: past and present merged",
+    detail: "The tourists' sunburnt bodies and the trees' fire-cured trunks share a 'common colour', collapsing past and present into a single image of endurance."
+  }, {
+    idea: "'No visible history' — the paradox of Caribbean erasure",
+    detail: "The phrase, repeated and placed as an interruption in the metre, insists: what seems absent is actually everywhere."
+  }, {
+    idea: "Grief and endurance as collective inheritance",
+    detail: "The trees 'grieve in silence, like parental love' — they shelter and mourn at once, embodying the Caribbean capacity to survive without forgetting."
+  }],
+  techniques: [{
+    name: "Extended metaphor (trees as enslaved people)",
+    example: "'They're cured, they endured their furnace.'",
+    effect: "The trees become a monument to those who survived the Middle Passage — 'cured' in both senses: healed and preserved."
+  }, {
+    name: "Classical allusion",
+    example: "'brown daphnes, laurels'; 'hamadryad'",
+    effect: "The Greek myth of Daphne (transformed into a tree) elevates the Caribbean landscape to the level of classical mythology."
+  }, {
+    name: "Heroic couplet at close",
+    example: "'One sunburnt body now acknowledges / that past and its own metamorphosis'",
+    effect: "The classical form enacts the recognition it describes — a formal closure linking past and present."
+  }, {
+    name: "Hybrid language / dual consciousness",
+    example: "'mongrel growling'; 'dialect a coarse'",
+    effect: "'A coarse' sounds like the Caribbean-accented 'of course' — the vernacular persists beneath 'standard' English."
+  }, {
+    name: "Repetition",
+    example: "'no visible history' (twice); 'grove' (repeated)",
+    effect: "Insists on the absent-present history; the repeated 'grove' extends the line of historical suffering into the present."
+  }],
+  metaphors: [{
+    metaphor: "'Aged trees and oiled limbs share a common colour!'",
+    analysis: "A shocking juxtaposition linking leisure tourism with the legacy of slavery — same sun-darkened skin, utterly different histories."
+  }, {
+    metaphor: "'their leaves' broad dialect a coarse, / enduring sound'",
+    analysis: "The vernacular as cultural survival: rough, persistent, unassimilated by the coloniser's 'standard' language."
+  }, {
+    metaphor: "'that grieves in silence, like parental love'",
+    analysis: "The grove as ancestor — present, sheltering, and mute in its sorrow."
+  }],
+  quotes: ["no visible history", "Aged trees and oiled limbs share a common colour!", "They're cured, / they endured their furnace.", "their leaves' broad dialect a coarse, / enduring sound / they shared together", "One sunburnt body now acknowledges / that past and its own metamorphosis", "that grieves in silence, like parental love", "huddling naked, stripped of their name"],
+  themes: [{
+    name: "The Caribbean",
+    explanation: "The poem is set on a specific Caribbean beach and celebrates — while mourning — its landscape's beauty and burden. The almond trees are endemic to the Caribbean coast; the 'further shore of Africa' is visible across the horizon. Geography is encoded with the history of the slave trade: the Atlantic is not just a sea but a wound."
+  }, {
+    name: "History",
+    explanation: "'No visible history' is the poem's central paradox: Caribbean history has been systematically erased, yet it is everywhere. The trees' fire-cured bark is the record of that history. The poem insists that what appears to be 'natural' landscape is in fact a historical text — one must learn to read it."
+  }, {
+    name: "Colonialism",
+    explanation: "The violence of colonialism is inscribed in the trees: 'stripped of their name, / for Greek or Roman tags' — the enslaved were renamed, their identities erased, just as Caribbean places were renamed by colonisers. 'Huddling naked, stripped of their name' directly evokes the slave ships."
+  }, {
+    name: "Nature",
+    explanation: "Nature here is never purely natural — every element carries historical weight. Yet Walcott also celebrates the sheer physical beauty of the Caribbean environment: 'their bodies fiercely shine!' Nature is simultaneously a site of suffering and a source of endurance and beauty."
+  }, {
+    name: "Mythology",
+    explanation: "Greek mythology (Daphne, hamadryads, the sacred grove) is transplanted into the Caribbean. Walcott uses classical allusion to elevate Caribbean experience to universal significance, while showing that Caribbean nature already has its own mythological depth."
+  }, {
+    name: "Different Peoples",
+    explanation: "The poem juxtaposes tourists ('brown daphnes, laurels') and the memory of the enslaved ('huddling naked, stripped of their name'). Both share the same physical space and the same sun-darkened skin, but one group is there by choice and the other was brought in chains. The poem quietly insists on this distinction."
+  }, {
+    name: "The Passage of Time",
+    explanation: "The final recognition — 'One sunburnt body now acknowledges / that past and its own metamorphosis' — is possible only because time has passed and yet preserved memory in the landscape. The heroic couplet formally enacts this linking of eras."
+  }, {
+    name: "Collective Experience",
+    explanation: "The trees 'shared together' their suffering — the vernacular they speak is collective. The poem moves from individual observation to a wider recognition of shared historical experience, culminating in 'parental love' as a figure for the community's grief that shelters all who come after."
+  }, {
+    name: "Suffering",
+    explanation: "The suffering of the enslaved is encoded in the trees: the 'furnace' they 'endured', the 'charred, ravaged holes' through which their grief 'howls seaward'. Their suffering is not past and finished but ongoing — still howling, still present in the landscape."
+  }],
+  form: "Free verse with varying line lengths. 'No visible history' breaks settled metre, stressing the absence it names. The final heroic couplet invokes classical form to enact historical recognition. Iambic pentameter at the close creates a formal transformation — the poem itself undergoes the 'metamorphosis' it describes."
+}, {
+  id: 3,
+  title: "A Far Cry from Africa",
+  year: "1962",
+  overview: "Written in response to the Mau Mau uprising in Kenya, the poem confronts Walcott's irreducible dilemma: of African descent yet formed by the English language and literary tradition. He can condemn neither Africa nor England without condemning himself, and the poem ends in unanswerable rhetorical questions.",
+  mainIdeas: [{
+    idea: "The divided self as colonial product",
+    detail: "The poet is 'poisoned with the blood of both' — neither purely African nor purely English, he is the living embodiment of the colonial encounter."
+  }, {
+    idea: "The moral obscenity of colonial violence",
+    detail: "Both colonial 'civilisation' and anti-colonial violence are shown to be brutal — 'the gorilla wrestles with the superman'. No position is clean."
+  }, {
+    idea: "Language as both weapon and home",
+    detail: "The English tongue is the medium through which Walcott expresses his alienation from it — the paradox of the post-colonial writer who loves what has also oppressed him."
+  }, {
+    idea: "The impossibility of neutrality",
+    detail: "There is no neutral ground for a man 'divided to the vein': every choice is a betrayal of one half of his identity."
+  }],
+  techniques: [{
+    name: "Phonetic violence (stressed syllables)",
+    example: "'Hacked', 'threshed', 'seize', 'batten'",
+    effect: "Violent actions are acoustically foregrounded — they rupture the metre, forcing the reader to feel the brutality."
+  }, {
+    name: "Irony / bitter sarcasm",
+    example: "'Statistics justify and scholars seize / The salients of colonial policy.'",
+    effect: "Academic language is exposed as the whitewash of atrocity — the bureaucratic distancing of mass murder."
+  }, {
+    name: "ABACB rhyme (then loosening)",
+    example: "'pelt / flies / veldt / paradise / cries'",
+    effect: "Initial formal control progressively breaks down, mirroring the speaker's psychological fragmentation."
+  }, {
+    name: "Rhetorical questions",
+    example: "'Where shall I turn, divided to the vein? / How can I turn from Africa and live?'",
+    effect: "The questions are unanswerable — the poem ends in crisis, not resolution, refusing false comfort."
+  }, {
+    name: "Paradox",
+    example: "'I who am poisoned with the blood of both'",
+    effect: "Mixed heritage figured as contamination — the poet cannot be 'pure' anything; his identity is the wound the poem examines."
+  }],
+  metaphors: [{
+    metaphor: "'the tawny pelt / Of Africa'",
+    analysis: "Africa as a great beast — simultaneously noble and prey to colonial hunters. The 'pelt' suggests both animal skin and a landscape being stripped."
+  }, {
+    metaphor: "'The worm, colonel of carrion'",
+    analysis: "Death — not the colonial power — is the only true sovereign. An ironic undermining of military hierarchy: in the end, the worm commands."
+  }, {
+    metaphor: "'the gorilla wrestles with the superman'",
+    analysis: "Anti-colonial violence against colonial power — both sides dehumanised. The 'superman' (Nietzschean/colonial ideal) is no more dignified than the 'gorilla'."
+  }],
+  quotes: ["A wind is ruffling the tawny pelt / Of Africa", "Corpses are scattered through a paradise.", "Statistics justify and scholars seize / The salients of colonial policy.", "I who am poisoned with the blood of both, / Where shall I turn, divided to the vein?", "how choose / Between this Africa and the English tongue I love?", "Betray them both, or give back what they give?", "How can I turn from Africa and live?"],
+  themes: [{
+    name: "Colonialism",
+    explanation: "The poem is set in colonial Kenya during the Mau Mau uprising — a direct confrontation with colonial violence in its rawest form. 'The salients of colonial policy' is savagely ironic: the bureaucratic language of empire is used to justify atrocities. The poem exposes colonialism not as civilisation but as a system that produces 'corpses scattered through a paradise'."
+  }, {
+    name: "Suffering",
+    explanation: "Suffering is everywhere: the 'white child hacked in bed', the Africans described as 'expendable as Jews', the violence of beast on beast. Walcott refuses to assign suffering only to one side — the poem holds all victims in view, which is precisely what makes its moral dilemma so agonising."
+  }, {
+    name: "Power",
+    explanation: "'Upright man / Seeks his divinity by inflicting pain' — power is exposed as fundamentally violent, whether colonial or anti-colonial. The 'gorilla wrestles with the superman': both figures are violent. Power defines itself through domination, not justice."
+  }, {
+    name: "History",
+    explanation: "The Mau Mau uprising is placed in a longer historical context: the violence of colonialism stretching back through 'civilization's dawn'. The poem asks whether history ever progresses, or whether 'brutish necessity' simply repeats itself — 'again... again'. Historical cycles of violence seem inescapable."
+  }, {
+    name: "Different Peoples",
+    explanation: "The poem is fundamentally about the impossibility of clean ethnic or cultural identity when peoples have been mixed by violence. The speaker is African and English, coloniser and colonised — 'different peoples' are not separate entities here but entangled, 'poisoned' together."
+  }, {
+    name: "Personal Experience",
+    explanation: "The final turn to the first person — 'I who am poisoned with the blood of both' — makes clear that this is not an abstract meditation but a lived crisis. Walcott's personal identity is at stake. The poem is an anguished self-examination as much as a political commentary."
+  }, {
+    name: "The Writer",
+    explanation: "The closing questions — 'how choose / Between this Africa and the English tongue I love?' — are specifically the dilemma of the post-colonial writer. Walcott writes in English, the coloniser's language, about the violence of colonisation. This irreducible paradox — the instrument of expression is also the instrument of oppression — cannot be escaped."
+  }],
+  form: "Opens with ABACB rhyme — a semblance of control that dissolves into looser, more anguished lines. Stressed violent syllables ('Hacked', 'threshed') rupture the metrical surface. The final couplet rhyme of 'give' / 'live' implies one must give back to continue living — but the giving is also an impossible choosing."
+}, {
+  id: 4,
+  title: "The Castaway",
+  year: "1965",
+  overview: "The speaker lies stranded on a Caribbean beach — simultaneously Robinson Crusoe, every isolated human being, and the poet himself. A meditation on solitude, the limits of language and metaphor, and the strange divinity available to a consciousness stripped bare of all social identity.",
+  mainIdeas: [{
+    idea: "Isolation as existential condition",
+    detail: "Being 'cast away' is not only geographic but spiritual and poetic — the island mirrors the isolated self, stripped of all external reference."
+  }, {
+    idea: "The rejection of 'dead metaphors'",
+    detail: "In a crucial meta-poetic moment, the speaker abandons inherited metaphors — the poet must build a new language from scratch, from the raw material of the island."
+  }, {
+    idea: "Humility before the cycle of nature",
+    detail: "The elaborate opening collapses towards 'We end in earth, from earth began' — a stripping away of pretension to the bare fact of mortality."
+  }, {
+    idea: "The Crusoe figure rewritten from the Caribbean",
+    detail: "Walcott rewrites the colonial myth: here it is the islander who is abandoned, not the European castaway who 'discovers' and masters the island."
+  }],
+  techniques: [{
+    name: "Irregular / fragmentary form",
+    example: "Short stanzas expand in the middle, then compress again",
+    effect: "Mirrors the ebb and flow of waves and the feeling of being stranded without fixed rhythm or direction."
+  }, {
+    name: "Anaphora (wave-like repetition)",
+    example: "Repeated natural images and movements throughout",
+    effect: "Creates the hypnotic rhythm of waves and the monotony of isolation — time without events."
+  }, {
+    name: "Meta-poetry",
+    example: "'Godlike, annihilating godhead, art / And self, I abandon / Dead metaphors'",
+    effect: "The poem questions itself — the castaway poet must start from zero, discarding inherited poetic tools."
+  }, {
+    name: "Ironic grandeur",
+    example: "'Cracking a sea-louse, I make thunder split.'",
+    effect: "The grandiose compared to the microscopic — the castaway becomes god of a tiny world, undercutting divine pretension with absurdist humour."
+  }],
+  metaphors: [{
+    metaphor: "'The starved eye devours the seascape for the morsel / Of a sail.'",
+    analysis: "Vision becomes hunger; the castaway's desperate search for rescue is figured as starvation — existential as much as physical."
+  }, {
+    metaphor: "'that green wine bottle's gospel choked with sand'",
+    analysis: "The message-in-a-bottle as a failed scripture — art and language reach no one; the castaway's communication is swallowed by the sea."
+  }, {
+    metaphor: "'Clenched sea-wood nailed and white as a man's hand'",
+    analysis: "Driftwood as a crucifix — Christ imagery invoked, then deflated: no redemption arrives."
+  }],
+  quotes: ["The starved eye devours the seascape for the morsel / Of a sail.", "We end in earth, from earth began.", "In our own entrails, genesis.", "Godlike, annihilating godhead, art / And self, I abandon / Dead metaphors", "The silence thwanged by two waves of the sea.", "Cracking a sea-louse, I make thunder split."],
+  themes: [{
+    name: "Personal Experience",
+    explanation: "The poem is an intensely private meditation — the speaker alone on the beach, his thoughts turning inward to solitude, mortality, and the act of writing. Walcott uses the castaway situation to dramatise the poet's existential isolation, the feeling of being marooned from society and tradition."
+  }, {
+    name: "The Sea",
+    explanation: "The sea defines and enforces isolation. It offers the possibility of rescue ('the morsel of a sail') and denies it ('the horizon threads it infinitely'). The sea's rhythms (the 'two waves') structure time; its indifference mirrors the universe's indifference to human desire."
+  }, {
+    name: "Nature",
+    explanation: "The poem is saturated with natural detail — sand, palm shadow, surf, dog faeces, sea-louse, coral. Nature is observed with absolute precision and without sentimentality: 'In the sun, the dog's feces / Crusts, whitens like coral.' This unflinching attention strips away romantic illusion, arriving at 'We end in earth, from earth began'."
+  }, {
+    name: "The Writer",
+    explanation: "The most explicitly meta-poetic of Walcott's poems: the speaker literally abandons 'dead metaphors' and questions the validity of his art. The 'green wine bottle's gospel choked with sand' — the message-in-a-bottle that reaches no one — figures the artist's dilemma: does writing serve any purpose in isolation?"
+  }, {
+    name: "The Caribbean",
+    explanation: "The Caribbean beach is the poem's specific geography, and the Crusoe myth is rewritten from a Caribbean perspective. The castaway is not a conquering European who will master 'his' island, but someone who is already there, already part of the landscape, observing it without dominion."
+  }, {
+    name: "Life and Death",
+    explanation: "'We end in earth, from earth began. / In our own entrails, genesis.' — the poem moves to the most fundamental facts: life comes from death and returns to it. The natural cycle — sand, coral, decomposition — makes this not tragic but simply true."
+  }],
+  form: "Light, irregular form: begins with short stanzas, extends in the middle, contracts again — mimicking the ebb and flow of tides. Odd rhymes return ('head'/'bed'), creating a sense of coming back to what was said, as waves do. The absence of fixed form mirrors the castaway's lack of anchor."
+}, {
+  id: 5,
+  title: "Verandah",
+  year: "1965",
+  overview: "The poet addresses the ghost of his grandfather — a white colonial planter who died by fire — and through this dialogue confronts the mixed legacy of empire and ancestry. The verandah, a threshold between interior and exterior, past and present, becomes the site of an impossible reckoning with love, guilt, and inheritance.",
+  mainIdeas: [{
+    idea: "The complexity of colonial inheritance",
+    detail: "The grandfather is simultaneously a representative of oppressive empire and the man the poet's father loved. The poem refuses both condemnation and exoneration."
+  }, {
+    idea: "The threshold as metaphor",
+    detail: "The verandah is the space in-between: between inside/outside, coloniser/colonised, past/present. It is the place where different worlds meet, uneasily."
+  }, {
+    idea: "Transformation through destruction",
+    detail: "'Those sparks pitched from your burning house are stars' — destruction is not the end but the origin of something luminous."
+  }, {
+    idea: "Voices surviving in a burnt house",
+    detail: "Despite the grandfather's guilt and death, the house 'has voices' — the inheritors carry on, transformed but not severed from the past."
+  }],
+  techniques: [{
+    name: "Rhymes crossing stanzas",
+    example: "Rhymes that bridge stanza breaks",
+    effect: "Forces the reader to look back while moving forward — enacting the poem's meditation on memory and the inescapability of the past."
+  }, {
+    name: "Book-ending with 'ends'",
+    example: "'Frail, ghostly loungers at verandah ends' (first and last lines)",
+    effect: "Creates a circularity — history is enclosed but also inescapable. The poem cannot move beyond what it begins with."
+  }, {
+    name: "Direct address",
+    example: "'sire', 'father', 'sir'",
+    effect: "The shifting terms (formal/intimate/respectful) reflect the poet's complex, unresolved emotional relationship with his ancestor."
+  }, {
+    name: "Fire / light imagery chain",
+    example: "Burning house → sparks → stars → souls as diamonds from coals",
+    effect: "A chain of transformation: each destructive element is transmuted into something more valuable and luminous."
+  }],
+  metaphors: [{
+    metaphor: "'like blackened timber with green, little lives'",
+    analysis: "The charred legacy of colonialism is the soil from which the poet's generation grows — destruction and new life are inseparable."
+  }, {
+    metaphor: "'those sparks pitched from your burning house are stars'",
+    analysis: "The descendants of the colonial world become constellations — the destruction of the old order creates new light, new orientation."
+  }, {
+    metaphor: "'souls / like pressured trees bring diamonds out of coals'",
+    analysis: "Suffering under historical pressure transmuted into something precious — the ultimate post-colonial alchemy."
+  }],
+  quotes: ["your house has voices, even your burnt house / cries with unguessed, lovely inheritors", "like blackened timber with green, little lives", "those sparks pitched from your burning house are stars", "souls / like pressured trees bring diamonds out of coals", "you are the man my father loved and was.", "frail, ghostly loungers at verandah ends", "I stretch a darkening hand to greet them there"],
+  themes: [{
+    name: "Family",
+    explanation: "The poem is addressed directly to the poet's grandfather, making it one of Walcott's most personal meditations on family. 'You are the man my father loved and was' — the grandfather is father and ancestor in one, the origin of the poet's own identity. The relationship is not one of condemnation but of painful, ambivalent love across a colonial divide."
+  }, {
+    name: "Colonialism",
+    explanation: "The grandfather embodies colonial power: 'ramrod colon', 'bully-boy roarers at the white Empire club', 'upholders of Victoria's china seas'. Yet his death by fire and his mixed-race son who buries 'his charred, blackened bones' show that colonialism also consumed those who enforced it. The 'Great House' is both monument to and casualty of empire."
+  }, {
+    name: "History",
+    explanation: "The poem is structured as a dialogue across time — the living poet addressing the dead ancestor. History is not abstract but personal: it lives in the body ('a darkening hand'), in the burnt house, in the inherited voices. The house 'survives / like blackened timber with green, little lives' — history persists in transformed form."
+  }, {
+    name: "Personal Experience",
+    explanation: "The direct address ('I climb up your stair', 'I stretch a darkening hand') makes this intensely personal. The poet is working through his own ambivalence about his mixed heritage — he cannot simply reject or simply accept the grandfather. The poem is a private act of reconciliation."
+  }, {
+    name: "The Caribbean",
+    explanation: "The verandah is a specifically Caribbean architectural form — a threshold space created by the colonial meeting of cultures, suited to the heat and the social complexity of the plantation world. The Caribbean landscape — the burning house, the 'strange coast' — contextualises the personal drama within a specific historical geography."
+  }, {
+    name: "Guilt",
+    explanation: "Guilt is threaded through the poem: the ironwork protects the house 'from guilt, perhaps'. The grandfather's guilt is the guilt of the coloniser; the poet's guilt is his inheritance of that legacy. Yet the poem moves towards something beyond guilt — 'Whatever love you suffered makes amends / within them, father' — love partially redeems."
+  }, {
+    name: "The Passage of Time",
+    explanation: "The poem is an act of summoning the past into the present. Time has transformed the burning house into starlight, coal into diamonds. The verandah — the place of 'ends' — is where the poet stands between past and future, unable to fully inhabit either, but finding meaning in the threshold itself."
+  }],
+  form: "Rhymes cross stanza breaks, pulling the reader back as memory does. 'Verandah ends' book-ends the poem, creating formal enclosure. Short and long lines intertwine, voicing the speaker's hesitation. The very structure of the poem is a threshold."
+}, {
+  id: 6,
+  title: "Mass Man",
+  year: "1969",
+  overview: "At Caribbean carnival, the speaker observes spectacular masquerades with fascination and painful detachment. The exuberance of carnival is inseparable from its dark underside: beneath the costumes, history's wounds are present. The poem ends with the writer's isolation and his sacred duty to bear witness.",
+  mainIdeas: [{
+    idea: "Carnival as double-edged cultural expression",
+    detail: "The carnival simultaneously celebrates Caribbean identity and masks — literally — the wounds of colonial history."
+  }, {
+    idea: "The poet as outsider-witness",
+    detail: "'Join us, they shout' — but the poet cannot fully participate; writing requires a terrible detachment from the communal joy."
+  }, {
+    idea: "Joy and mania as responses to historical trauma",
+    detail: "'My mania, my mania is a terrible calm' — the ecstasy of carnival is itself a form of controlled grief, not its opposite."
+  }, {
+    idea: "The sacred duty of the writer",
+    detail: "'Someone must write your poems' — the final lines assign the poet a near-religious function: to remember what carnival temporarily forgets."
+  }],
+  techniques: [{
+    name: "Anaphora (preacher's repetition)",
+    example: "'some skull must… some mind must… some hand must… someone must'",
+    effect: "Creates the rhythm of a Baptist preacher's sermon — the carnival and the church are superimposed, both communal rituals of transformation."
+  }, {
+    name: "Classical allusion",
+    example: "'barges like Cleopatra down her river'",
+    effect: "Carnival excess elevated to the scale of classical epic — the Caribbean grotesque as world-historical spectacle."
+  }, {
+    name: "Iambic metre on processional lines",
+    example: "Lines describing the parade's movement",
+    effect: "The metre enacts the rhythmic movement of the procession — form and content converge."
+  }, {
+    name: "Oxymoron",
+    example: "'my mania is a terrible calm'",
+    effect: "The paradox captures the essence of carnival: wild surface, deep stillness — ecstasy as another name for grief."
+  }],
+  metaphors: [{
+    metaphor: "'a great lion's head clouded by mange'",
+    analysis: "Caribbean identity: powerful and majestic in its origins, but damaged and diseased by colonial history."
+  }, {
+    metaphor: "'from an old gibbet my bull-whipped body swings, a metronome!'",
+    analysis: "The history of slavery is the beat beneath carnival joy — the gibbet becomes the rhythm of the dance. History is inescapable even in celebration."
+  }],
+  quotes: ["What metaphors! / What coruscating, mincing fantasies!", "'Join us,' they shout. 'Oh God, child, you can't dance?'", "But I am dancing, look, from an old gibbet my bull-whipped body swings, a metronome!", "my mania, my mania is a terrible calm.", "some skull must rub its memory with ashes, some mind must squat down howling in your dust, some hand must crawl and recollect your rubbish, someone must write your poems."],
+  themes: [{
+    name: "The Caribbean",
+    explanation: "Carnival is the most distinctively Caribbean cultural institution — a festival born from the mixing of African, European, and indigenous traditions under slavery and colonialism. Walcott presents it as the most complex expression of Caribbean identity: spectacular, joyful, yet haunted by the history it simultaneously mourns and celebrates."
+  }, {
+    name: "Culture",
+    explanation: "The masquerade figures — lion, peacock, Cleopatra — draw on African, classical, and Caribbean traditions simultaneously. Culture here is not inherited from one source but constructed from fragments of many, which is itself the product of colonialism's violent mixing of peoples. Carnival IS Caribbean culture: hybrid, spectacular, and uncontainable."
+  }, {
+    name: "Collective Experience",
+    explanation: "'Join us, they shout' — the carnival is a collective act, a community expressing itself as one body. The poet's isolation from this collective experience is the poem's central tension. The closing anaphora ('some skull must…, someone must write your poems') assigns the writer a collective function: to carry the community's memory."
+  }, {
+    name: "History",
+    explanation: "'From an old gibbet my bull-whipped body swings, a metronome!' — the history of slavery is the hidden beat of carnival. The gibbet and the bull-whip are not past; they are present beneath the costumes. History is not forgotten in carnival but transformed — the dance is performed on the bones of the enslaved."
+  }, {
+    name: "Suffering",
+    explanation: "The child who 'collapses, sobbing' beneath the carnival spectacle and the image of the 'old gibbet' insist that suffering persists beneath the mask of celebration. Carnival does not resolve suffering; it metabolises it into collective ritual."
+  }, {
+    name: "The Writer",
+    explanation: "The poet cannot dance — not because he is unable, but because his role requires him to stand apart and remember. 'Someone must write your poems' is the writer's terrible burden: to refuse the collective amnesia of celebration, to insist on the memory that the festival would dissolve."
+  }, {
+    name: "Religion / Christianity",
+    explanation: "The closing anaphora sounds like a Baptist preacher: 'some skull must rub its memory with ashes' echoes Ash Wednesday liturgy. Carnival itself is a religious festival (Mardi Gras), and Walcott overlays Christian ritual structure on the secular spectacle. The writer's duty is quasi-priestly: to perform the rite of memory."
+  }],
+  form: "Anaphora at the close sounds like a Baptist preacher: 'some skull…, some mind…, some hand…'. Iambic metre on processional lines adds to the carnival rhythm. Repetition of 'mania' and the preacher-like close create a music that matches the carnival atmosphere while insisting on its darker undertones."
+}, {
+  id: 7,
+  title: "Sea Grapes",
+  year: "1976",
+  overview: "A schooner seen from a Caribbean shore triggers a meditation on Homer's Odyssey. The 'ancient war between obsession and responsibility' — the wanderer torn between the sea and home — is presented as universal and unresolvable. The classics offer consolation, but never quite enough.",
+  mainIdeas: [{
+    idea: "Classical mythology in a Caribbean setting",
+    detail: "The Odyssey is imported into the Caribbean; the timeless human tension of departure and return is located in the islands, elevating Caribbean experience to universal scale."
+  }, {
+    idea: "The irresolvable conflict between wandering and rootedness",
+    detail: "The poem refuses to resolve: 'This brings nobody peace.' The ancient war between obsession and responsibility has no victor."
+  }, {
+    idea: "The inadequacy of the inherited canon",
+    detail: "'The classics can console. But not enough.' — the European literary tradition cannot fully address Caribbean experience or the poet's divided condition."
+  }, {
+    idea: "The sea as both connection and confinement",
+    detail: "The Caribbean sea connects to all oceans and all epics, yet it also marks the limits of the island world. The sea is simultaneously liberation and enclosure."
+  }],
+  techniques: [{
+    name: "Extended Homeric allusion",
+    example: "Odysseus, Nausicaa, Troy, 'the great hexameters'",
+    effect: "The Caribbean scene is elevated to universal myth; simultaneously, the myth is 'localised' — brought down to the specific harbour."
+  }, {
+    name: "Iambic opening then deliberately broken",
+    example: "'That sail which leans on light' (iambic) then disrupted metre",
+    effect: "Invokes the classical, then immediately severs from it — the poem performs its own argument about the limits of inherited forms."
+  }, {
+    name: "Rhymes crossing stanzas",
+    example: "Rhyme bridges between stanza breaks",
+    effect: "The past is bound up with the present; you cannot think forward without being drawn back."
+  }, {
+    name: "Final aphorism with caesura",
+    example: "'The classics can console. But not enough.'",
+    effect: "The caesura enacts the limitation it names: a break between what tradition offers and what is actually needed."
+  }],
+  metaphors: [{
+    metaphor: "'That sail which leans on light'",
+    analysis: "The schooner as a mythological vision — delicate, exhausted, leaning on the light of history and tradition."
+  }, {
+    metaphor: "'the great hexameters come / to the conclusions of exhausted surf'",
+    analysis: "Homer's epic metre is identical to the Caribbean sea's rhythm — the classics are already in the landscape, whether one invokes them or not."
+  }],
+  quotes: ["That sail which leans on light, / tired of islands", "that father and husband's longing, under gnarled sour grapes", "This brings nobody peace. The ancient war between obsession and responsibility / will never finish", "since Troy sighed its last flame", "the great hexameters come / to the conclusions of exhausted surf", "The classics can console. But not enough."],
+  themes: [{
+    name: "Mythology",
+    explanation: "The poem is built on the Odyssey: Odysseus, Nausicaa, Troy, 'the great hexameters'. Walcott uses Homeric myth not to escape the Caribbean but to locate it within world literature. The Caribbean schooner IS Odysseus's ship; the Caribbean sea IS the Aegean. Mythology gives the present moment depth and universality."
+  }, {
+    name: "The Sea",
+    explanation: "The sea is both the poem's setting and its primary symbol. It connects the Caribbean to the whole Mediterranean world of Homer; it is the medium of both wandering and homecoming. The 'exhausted surf' suggests that the sea, like history, never stops — it reaches conclusions only to begin again."
+  }, {
+    name: "History",
+    explanation: "Troy's fall, Homer's hexameters, and the Caribbean present are linked in one continuous current. 'Since Troy sighed its last flame' — the Trojan War is not past but present in the Caribbean sea's rhythm. History for Walcott is a long, connected wave, not a series of separate events."
+  }, {
+    name: "The Caribbean",
+    explanation: "The poem anchors the universal in the specific: the 'Caribbean' sea, the schooner 'beating up the Caribbean for home', the 'sea grapes' of the title (a Caribbean coastal plant). The Caribbean is not a peripheral location but the place from which the whole of human experience becomes visible."
+  }, {
+    name: "Personal Experience",
+    explanation: "The 'adulterer hearing Nausicaa's name / in every gull's outcry' — the wanderer's longing for home — is felt personally. The poem meditates on the speaker's own unresolvable tension between wandering (the poetic, exploratory life) and responsibility (home, family, belonging)."
+  }, {
+    name: "Collective Experience",
+    explanation: "'The ancient war between obsession and responsibility / will never finish' — this is not one man's conflict but every human being's. The sea-wanderer and 'the one on shore wriggling on his sandals to walk home' represent universal human types, not just the poet."
+  }, {
+    name: "The Passage of Time",
+    explanation: "'Since Troy sighed its last flame' — time is measured in epic scale. The present moment on the Caribbean shore is a point in a continuous line stretching back to Homer. The classics console precisely because they show that this conflict is not new — but 'not enough' because knowing this does not resolve it."
+  }],
+  form: "Iambic opening invokes classical tradition, then deliberately broken — the poem performs its severance from the inherited canon. Rhymes cross stanzas, forcing retrospection. The final line's caesura ('But not enough') is both metrical and argumentative: it is literally the form enacting the theme of insufficiency."
+}, {
+  id: 8,
+  title: "After the Storm",
+  year: "1979",
+  overview: "Shabine — Walcott's Caribbean sailor alter-ego — speaks from the deck after surviving a storm. A meditation on solitude at sea, the Caribbean archipelago as fragmented home, and the possibility of peace after suffering. The vernacular voice of the Caribbean speaks directly and simply to the reader.",
+  mainIdeas: [{
+    idea: "The Caribbean as archipelago of belonging",
+    detail: "'As many islands as the stars at night' — fragmentation is not loss but abundance; the scattered islands mirror the stars, both forming a navigable pattern."
+  }, {
+    idea: "The sea as final companion",
+    detail: "'My first friend was the sea. Now, is my last.' — the sea is both origin and destination, the constant that outlasts all human relationships."
+  }, {
+    idea: "Resignation and peace after suffering",
+    detail: "Shabine no longer tries to recover happiness; he finds a new kind of peace in stargazing and work — the acceptance of 'things must fall'."
+  }, {
+    idea: "The vernacular as poetic authority",
+    detail: "The patois voice ('cotching', 'when that don't work') gives the poem its authenticity — the local voice is equal to any literary register."
+  }],
+  techniques: [{
+    name: "Caribbean patois / vernacular",
+    example: "'cotching under a lantern'; 'when that don't work'",
+    effect: "The vernacular asserts the validity of local voice against the standard English literary tradition — Shabine's speech is poetry precisely as it is, unedited."
+  }, {
+    name: "Personification",
+    example: "'My first friend was the sea.'",
+    effect: "The sea is not landscape but companion — intimate and absolute, outlasting all human friendships."
+  }, {
+    name: "Light metaphor",
+    example: "'the moon open / a cloud like a door, and the light over me / is a road in white moonlight taking me home'",
+    effect: "Moonlight transforms the sea into a path — hope as a navigational tool; home as something that draws rather than confines."
+  }, {
+    name: "Direct address to reader",
+    example: "'Shabine sang to you from the depths of the sea.'",
+    effect: "The poem closes by addressing everyone: Shabine's experience becomes collective, his song a gift from the depths."
+  }],
+  metaphors: [{
+    metaphor: "'the moon open / a cloud like a door'",
+    analysis: "Hope presented as an opening: the night is not sealed but passable. The passive construction ('open') makes hope feel given, not earned."
+  }, {
+    metaphor: "'a road in white moonlight taking me home'",
+    analysis: "The sea, usually figured as exile and danger, becomes a road home — perception and acceptance determine meaning."
+  }],
+  quotes: ["As many islands as the stars at night", "But things must fall, and so it always was", "My first friend was the sea. Now, is my last.", "I try to forget what happiness was", "the moon open / a cloud like a door, and the light over me / is a road in white moonlight taking me home.", "Shabine sang to you from the depths of the sea."],
+  themes: [{
+    name: "The Caribbean",
+    explanation: "The poem is the most explicitly Caribbean of Walcott's poems in voice and geography. Shabine speaks in patois; the 'schooner Flight' sails through the archipelago; the islands are as numerous as stars. The Caribbean is not a setting but a way of speaking, a way of navigating the world — Shabine's vernacular IS the Caribbean's literary voice."
+  }, {
+    name: "The Sea",
+    explanation: "'My first friend was the sea. Now, is my last.' — for Shabine, the sea is the primary relationship of his life. It has given him his freedom, his livelihood, his suffering, and now his peace. After the storm, the sea is not conquered but accepted — 'the soft-scissored foam' is quiet, not threatening. The sea endures all transformations."
+  }, {
+    name: "Personal Experience",
+    explanation: "The poem is deeply personal: Shabine's attempt to forget happiness, his solitary reading under the lantern, his contemplation of the stars. The weight of 'I try to forget what happiness was' makes it feel confessional — a private account of irreversible loss and the discipline required to survive it."
+  }, {
+    name: "Nature",
+    explanation: "The stars, the foam, the moon, the sea — nature is the primary reality for the sailor. After the storm, nature offers the only consolation: the moon opens a cloud 'like a door'. Nature is not hostile or indifferent but actively hospitable — it provides a road home."
+  }, {
+    name: "Collective Experience",
+    explanation: "'Shabine sang to you from the depths of the sea' — the closing line expands the personal into the collective. Shabine sings not for himself but for everyone; his experience of loss, endurance, and provisional peace is offered as a gift to all readers. The vernacular 'you' is direct and inclusive."
+  }, {
+    name: "Life and Death",
+    explanation: "'But things must fall, and so it always was' — this quiet acceptance of mortality and loss is at the poem's heart. The storm has passed, but things still fall: Venus and Mars, fruit from trees, men from their happiness. The poem's peace is achieved not by denying death but by accepting its place in the natural order."
+  }, {
+    name: "The Passage of Time",
+    explanation: "'I try to forget what happiness was' — time has passed and taken happiness with it. The poet does not rage against this but studies the stars, works, accepts. The poem's patois voice slows time, making each moment — the turning deck, the opening cloud — its own eternity."
+  }],
+  form: "Simple, lyrical stanzas with a patois voice. The form is direct and unadorned — unlike the more literary poems, this one speaks in the vernacular. The transition from complex syntax to short, simple sentences ('I stop talking now. I work, then I read') enacts Shabine's hard-won acceptance."
+}, {
+  id: 9,
+  title: "The Season of Phantasmal Peace",
+  year: "1981",
+  overview: "In a visionary moment, all the world's birds cooperate to lift 'the huge net of the shadows of this earth'. For one transcendent instant, suffering, history and division are suspended in a season of phantasmal peace. The poem meditates on the possibility — and the brevity — of universal grace.",
+  mainIdeas: [{
+    idea: "A collective utopian vision beyond human division",
+    detail: "All nations of birds act together; the poem imagines a moment beyond human suffering and conflict — achieved not by humans but by nature."
+  }, {
+    idea: "Nature as the agent of collective redemption",
+    detail: "It is the birds, not human effort, that lift the net of darkness. Nature surpasses human capacity for peace."
+  }, {
+    idea: "The brevity of transcendence",
+    detail: "'This season lasted one moment, like the pause / between dusk and darkness' — the vision is real but cannot last; the poem both celebrates and mourns it."
+  }, {
+    idea: "Love as the animating principle of the universe",
+    detail: "'Love, / made seasonless' — at the heart of this vision is a love that transcends time, geography, and division."
+  }],
+  techniques: [{
+    name: "Extended metaphor (birds lifting the net)",
+    example: "'all the nations of birds lifted together / the huge net of the shadows of this earth'",
+    effect: "Nature performs a collective, redemptive act — the birds are agents of grace, doing what human history cannot."
+  }, {
+    name: "Accumulative anaphora",
+    example: "'the shadows of long pines… / the shadows of glass-faced towers… / the shadow of a frail plant'",
+    effect: "Every shadow — every form of suffering, history, darkness — is being lifted. The accumulation makes the vision feel total."
+  }, {
+    name: "Simile of maternal comfort",
+    example: "'like a mother drawing / the trembling gauze over the trembling eyes / of a child fluttering to sleep'",
+    effect: "Peace compared to a mother's tenderness — intimate, gentle, protective. The most domestic of comforts becomes cosmic."
+  }, {
+    name: "Temporal paradox",
+    example: "'this season lasted one moment… but, for such as our earth is now, it lasted long'",
+    effect: "Eternity compressed into a moment; the vision is both brief and complete — a paradox the poem refuses to resolve."
+  }],
+  metaphors: [{
+    metaphor: "'the huge net of the shadows of this earth'",
+    analysis: "All human darkness — suffering, history, conflict — figured as a net that can, momentarily, be lifted. The 'net' also suggests the entanglement of all peoples in shared suffering."
+  }, {
+    metaphor: "'something brighter than pity for the wingless ones / below them'",
+    analysis: "The birds' concern for humanity surpasses pity — it is a higher-order love, the compassion of those who can see from above."
+  }],
+  quotes: ["Then all the nations of birds lifted together / the huge net of the shadows of this earth", "there was no longer dusk, or season, decline, or weather, / only this passage of phantasmal light", "Love, / made seasonless", "something brighter than pity for the wingless ones / below them", "this season lasted one moment, like the pause / between dusk and darkness, between fury and peace, / but, for such as our earth is now, it lasted long."],
+  themes: [{
+    name: "Collective Experience",
+    explanation: "'All the nations of birds' — the collective scale is everything. The vision is achieved not by individuals but by the coordinated action of all birds together. Walcott imagines a moment of universal collective experience that transcends national, racial, and historical division. The 'wingless ones below' — humanity — are united in being sheltered."
+  }, {
+    name: "Nature",
+    explanation: "Nature is not background but the active agent of the poem's vision. The birds, the long pines, the frail plant, the wild geese, the starlings — the natural world performs the redemption that human history cannot achieve. Nature here is a moral force, not a romantic backdrop."
+  }, {
+    name: "Suffering",
+    explanation: "'The huge net of the shadows of this earth' — the net is made of shadows, and shadows are the accumulated suffering of history. The poem imagines this net being lifted, all at once. It does not deny suffering — it holds it fully in view — but imagines a moment when it might, briefly, be suspended."
+  }, {
+    name: "History",
+    explanation: "The shadows being lifted include the shadows of 'glass-faced towers' (modernity) and 'long pines' (ancient nature) — the whole of history. The poem places the present moment within a vast historical arc, asking what it would mean to be free, even briefly, from that weight."
+  }, {
+    name: "The Passage of Time",
+    explanation: "'There was no longer dusk, or season, decline, or weather' — the vision involves the suspension of time itself. The 'season' of the title is 'phantasmal' precisely because it is not really a season: it is a moment outside ordinary time. Yet it 'lasted long' because such moments of grace are the measure of time's value."
+  }, {
+    name: "Life and Death",
+    explanation: "'Between fury and peace' — the poem is situated at the boundary between violence and its cessation. The birds lift the net 'above all change, betrayals of falling suns' — the vision is of a realm beyond mortality's reach, even if only for one moment."
+  }, {
+    name: "Love and Sexuality",
+    explanation: "'Love, / made seasonless' — the word 'Love' arrives at the poem's centre, unprepared for and placed alone on its own line. Walcott suggests that what animates the birds' concern for humanity is a form of love — not erotic or familial, but cosmological: the love that holds the universe together, expressed briefly in this season of peace."
+  }],
+  form: "Long, flowing stanzas with an incantatory rhythm. The accumulative anaphora ('the shadows of…') and the gradual dissolution of concrete imagery into light and sound enact the poem's central action: darkness being lifted. The temporal paradox at the close ('one moment… lasted long') is the poem's formal resolution — time undone."
+}, {
+  id: 10,
+  title: "The Flock",
+  year: "1973",
+  overview: "Observing migrating birds flying towards the Caribbean from a northern winter, the poet meditates on the nature of poetic creation. The birds become a metaphor for poems themselves — migrating instinctively, following routes older than individual consciousness. The writer's duty is to sustain creative 'fixity' through all seasons of change.",
+  mainIdeas: [{
+    idea: "Migrating birds as poems",
+    detail: "'Settling the branched mind like migrating birds' — the creative process follows instinct rather than will; poems arrive and depart like flocks."
+  }, {
+    idea: "The writer's persistence through change",
+    detail: "The 'dark impartial Arctic' of history is indifferent to genius; the writer must maintain fixity against all seasons of erasure and change."
+  }, {
+    idea: "North vs. South as competing cultural worlds",
+    detail: "European winter and Caribbean tropics represent the poet's divided cultural inheritance — he travels between them, 'measuring winter's augury by words'."
+  }, {
+    idea: "The act of writing as marking the void",
+    detail: "'Making dark symbols with this pen's print across snow' — writing is a fragile gesture of presence against the blankness of oblivion."
+  }],
+  techniques: [{
+    name: "ABAB opening (then abandoned)",
+    example: "'teal / mallard / fly / sky' — first four lines",
+    effect: "Sets up traditional expectation (sonnet, elegiac stanza), then breaks it — the formal contract is severed, as the birds break from predictable routes."
+  }, {
+    name: "Iambic and anapaestic variation",
+    example: "Rhythm shifts between iambic and anapaestic within lines",
+    effect: "Mirrors the birds' changing direction and the poet's shifting perspectives between classical form and Caribbean freedom."
+  }, {
+    name: "Meta-poetic image",
+    example: "'making dark symbols with this pen's print across snow'",
+    effect: "Writing across the blank whiteness of winter — the poem is its own subject; the page is the snowfield."
+  }, {
+    name: "Historical allusion via imagery",
+    example: "'glaciers encased the mastodon, froze giant minds in marble attitudes'",
+    effect: "History's indifference to genius — 'impartial' is devastating: the Arctic does not care what greatness it destroys."
+  }],
+  metaphors: [{
+    metaphor: "'dark symbols with this pen's print across snow'",
+    analysis: "Writing as a fragile mark against oblivion; the blank page as winter; the poem as trace evidence of a consciousness that passed through."
+  }, {
+    metaphor: "'settling the branched mind like migrating birds'",
+    analysis: "Thoughts as a flock that alight and depart — the mind as a tree in which poems roost, briefly, before flying on."
+  }, {
+    metaphor: "'The dark impartial Arctic'",
+    analysis: "History as a cold, inhuman force that destroys indiscriminately — 'impartial' is the devastating adjective: it does not choose whom to erase."
+  }],
+  quotes: ["arrows of yearning for our different sky", "I travel through such silence, making / dark symbols with this pen's print across snow", "measuring winter's augury by words / settling the branched mind like migrating birds", "The dark impartial Arctic, / whose glaciers encased the mastodon, froze giant minds in marble attitudes", "Till its annihilation may the mind / reflect his fixity through winter, tropic", "flying by instinct to their secret places"],
+  themes: [{
+    name: "The Writer",
+    explanation: "The poem is Walcott's most sustained meditation on the creative act itself. The birds are the central metaphor for poems: they migrate by instinct, not by will; they follow routes older than the individual bird; they arrive and depart without explanation. The writer's task is to be the branched mind on which they land, and to 'make dark symbols' that mark their passage. 'Never question when they come or go' — the poet cannot force inspiration but must be ready to receive it."
+  }, {
+    name: "Nature",
+    explanation: "The natural world — birds, glaciers, the Arctic, the tundra, the mastodon — is the poem's sustained imagery. But nature here is not pastoral or comforting: it is indifferent, cyclical, and vast. The migrating birds follow a route that predates human history. Nature's 'tireless, determined grace' is the model the writer aspires to."
+  }, {
+    name: "History",
+    explanation: "The 'dark impartial Arctic' encased the mastodon and 'froze giant minds in marble attitudes' — history erases greatness without discrimination. The poem confronts the writer with the fact that history is indifferent to individual genius. The only response is the writer's own 'fixity': to keep making marks regardless."
+  }, {
+    name: "The Passage of Time",
+    explanation: "The poem is structured around seasonal change: winter in the north, tropic in the Caribbean, the cycling return of the birds. Time is geological ('the dark impartial Arctic'), evolutionary ('the mastodon'), and personal ('this journey by the wintry flare of dawn'). The writer must persist through all timescales."
+  }, {
+    name: "Personal Experience",
+    explanation: "The 'I' of the poem is the poet at his desk, watching the birds fly across the sky, making his 'dark symbols'. This is the most intimate of Walcott's self-portraits as a writer — solitary, observant, committed to a practice that outlasts any particular poem."
+  }, {
+    name: "Collective Experience",
+    explanation: "The poem opens with the birds' collective migration and closes with 'the high, whirring flock'. The individual writer's creative act is implicitly collective: poems, like birds, travel routes that others have followed and others will follow. The writer participates in a tradition larger than himself."
+  }],
+  form: "Opens with a traditional ABAB quatrain, then deliberately breaks form — the abandonment of rhyme mirrors the birds' departure from predictable patterns. Iambic and anapaestic variation within lines echoes the irregular wingbeat. The poem ends in motion: 'flying by instinct to their secret places' — the poem, like the flock, does not arrive but passes through."
+}];
+const themeColors = {
+  "Colonialism": {
+    bg: "#4a0d0d",
+    text: "#ffb3b3",
+    border: "#8b1a1a"
+  },
+  "Suffering": {
+    bg: "#4a2000",
+    text: "#ffcc99",
+    border: "#8b4500"
+  },
+  "Power": {
+    bg: "#3a3000",
+    text: "#ffe080",
+    border: "#7a6500"
+  },
+  "The Writer": {
+    bg: "#2a0a4a",
+    text: "#d4b0ff",
+    border: "#5a2090"
+  },
+  "The Sea": {
+    bg: "#003050",
+    text: "#90d4ff",
+    border: "#006090"
+  },
+  "History": {
+    bg: "#3a2000",
+    text: "#e8c080",
+    border: "#7a5000"
+  },
+  "The Passage of Time": {
+    bg: "#2a2a2a",
+    text: "#c8c8c8",
+    border: "#555555"
+  },
+  "Guilt": {
+    bg: "#3a001a",
+    text: "#ffaacc",
+    border: "#7a0040"
+  },
+  "Mythology": {
+    bg: "#0a1a4a",
+    text: "#aab8ff",
+    border: "#253a8a"
+  },
+  "Religion / Christianity": {
+    bg: "#25003a",
+    text: "#d8aaff",
+    border: "#550080"
+  },
+  "The Caribbean": {
+    bg: "#003a30",
+    text: "#80ffdd",
+    border: "#007060"
+  },
+  "Culture": {
+    bg: "#003a3a",
+    text: "#80eeff",
+    border: "#007070"
+  },
+  "Different Peoples": {
+    bg: "#003a10",
+    text: "#80ffaa",
+    border: "#007030"
+  },
+  "Personal Experience": {
+    bg: "#1a3a00",
+    text: "#ccff80",
+    border: "#407000"
+  },
+  "Collective Experience": {
+    bg: "#0a3a00",
+    text: "#a0ff80",
+    border: "#207000"
+  },
+  "Family": {
+    bg: "#4a001a",
+    text: "#ffaac8",
+    border: "#8a0040"
+  },
+  "Life and Death": {
+    bg: "#1a1a1a",
+    text: "#aaaaaa",
+    border: "#444444"
+  },
+  "Love and Sexuality": {
+    bg: "#4a0030",
+    text: "#ff99ee",
+    border: "#8a0060"
+  },
+  "Nature": {
+    bg: "#003a00",
+    text: "#88ff88",
+    border: "#206020"
+  }
+};
+const themeGuide = [{
+  name: "Colonialism",
+  examAngle: "Explore how Walcott uses the ruins, the body, the landscape, and language itself as sites where colonial history is written — and resisted.",
+  poems: [{
+    title: "Ruins of a Great House",
+    angle: "The plantation house as physical metaphor for empire's decay. Walcott moves from rage to compassion, suggesting that colonialism corrupts both the colonised and the coloniser.",
+    quotes: ["A smell of dead limes quickens in the nose / The leprosy of empire.", "What Kipling heard, the death of a great empire, the abuse / Of ignorance by Bible and by sword.", "Albion too was once / A colony like ours"]
+  }, {
+    title: "A Far Cry from Africa",
+    angle: "Colonialism produces the divided self — the speaker is 'poisoned with the blood of both'. Colonial violence ('Bible and sword') is mirrored in anti-colonial violence; no position is clean.",
+    quotes: ["Statistics justify and scholars seize / The salients of colonial policy.", "Corpses are scattered through a paradise.", "I who am poisoned with the blood of both, / Where shall I turn, divided to the vein?"]
+  }, {
+    title: "The Almond Trees",
+    angle: "Colonialism is inscribed in nature itself: the trees were 'stripped of their name, for Greek or Roman tags', just as the enslaved were renamed. The landscape carries what history refuses to record.",
+    quotes: ["no visible history", "huddling naked, stripped of their name", "Aged trees and oiled limbs share a common colour!"]
+  }, {
+    title: "Verandah",
+    angle: "The colonial grandfather is both oppressor and beloved ancestor — Walcott refuses to simplify. The burnt house generates new life: colonialism's destruction is also the origin of a new Caribbean identity.",
+    quotes: ["your house has voices, even your burnt house / cries with unguessed, lovely inheritors", "those sparks pitched from your burning house are stars", "souls / like pressured trees bring diamonds out of coals"]
+  }, {
+    title: "Mass Man",
+    angle: "Carnival is both a Caribbean celebration and a mask over colonial wounds. 'From an old gibbet my bull-whipped body swings, a metronome!' — the history of slavery is the hidden rhythm beneath the joy.",
+    quotes: ["from an old gibbet my bull-whipped body swings, a metronome!", "my mania, my mania is a terrible calm."]
+  }]
+}, {
+  name: "History",
+  examAngle: "For Walcott, history is never past — it is sensory, physical, and inescapable. It lives in the smell of dead limes, the shape of a tree, the rhythm of a wave. The challenge is to find a language adequate to this persistence.",
+  poems: [{
+    title: "Ruins of a Great House",
+    angle: "History is physical — it rises as smell, as stone, as name. The intertextual fragments (Browne, Donne, Kipling) show that literary history is also inescapable. History is layered, not linear.",
+    quotes: ["Stones only, the disjecta membra of this Great House", "A smell of dead limes quickens in the nose / The leprosy of empire.", "The rot remains with us, the men are gone."]
+  }, {
+    title: "The Almond Trees",
+    angle: "Caribbean history has been 'erased' but is encoded in the landscape itself. The almond trees are living historical documents — their fire-cured bark is the record of the Middle Passage.",
+    quotes: ["no visible history", "They're cured, / they endured their furnace.", "One sunburnt body now acknowledges / that past and its own metamorphosis"]
+  }, {
+    title: "A Far Cry from Africa",
+    angle: "History repeats itself: 'Again brutish necessity wipes its hands / Upon the napkin of a dirty cause, again'. The cycles of colonial violence and anti-colonial resistance seem inescapable.",
+    quotes: ["since civilizations dawn", "Again brutish necessity wipes its hands / Upon the napkin of a dirty cause"]
+  }, {
+    title: "Verandah",
+    angle: "Personal history IS colonial history — the poet's grandfather embodies empire, and the burnt house is both private loss and historical allegory. History persists 'like blackened timber with green, little lives'.",
+    quotes: ["like blackened timber with green, little lives", "you are the man my father loved and was."]
+  }, {
+    title: "Sea Grapes",
+    angle: "History is a long, connected wave — Troy's fall, Homer's hexameters, and the Caribbean present are linked. 'Since Troy sighed its last flame' places the Caribbean in the deepest possible historical perspective.",
+    quotes: ["since Troy sighed its last flame", "the great hexameters come / to the conclusions of exhausted surf", "The classics can console. But not enough."]
+  }, {
+    title: "The Flock",
+    angle: "History is 'the dark impartial Arctic' — it erases genius without discrimination. The writer's only response is fixity: to keep making marks against oblivion.",
+    quotes: ["The dark impartial Arctic, / whose glaciers encased the mastodon, froze giant minds in marble attitudes", "I travel through such silence, making / dark symbols with this pen's print across snow"]
+  }]
+}, {
+  name: "The Writer",
+  examAngle: "Walcott consistently interrogates his own position as a Caribbean writer formed by the English literary tradition. Writing is both an act of resistance and a complicity — the instrument of oppression is also the instrument of liberation.",
+  poems: [{
+    title: "Ruins of a Great House",
+    angle: "The writer is formed by the tradition he critiques. 'My eyes burned from the ashen prose of Donne' — the intertextual fragments show that the poet's identity is assembled from the very literature that underpinned colonialism.",
+    quotes: ["My eyes burned from the ashen prose of Donne.", "All in compassion ends / So differently from what the heart arranged"]
+  }, {
+    title: "The Castaway",
+    angle: "The most explicitly meta-poetic poem: the castaway-poet must abandon 'dead metaphors' and build a new language from scratch. Art is questioned — the 'green wine bottle's gospel choked with sand' reaches no one.",
+    quotes: ["Godlike, annihilating godhead, art / And self, I abandon / Dead metaphors", "The silence thwanged by two waves of the sea."]
+  }, {
+    title: "Mass Man",
+    angle: "The writer cannot dance at carnival — he must stand apart and remember. 'Someone must write your poems' is the writer's sacred burden: to refuse collective amnesia and insist on historical memory.",
+    quotes: ["What metaphors! / What coruscating, mincing fantasies!", "some skull must rub its memory with ashes, some mind must squat down howling in your dust, someone must write your poems."]
+  }, {
+    title: "A Far Cry from Africa",
+    angle: "The post-colonial writer's irreducible paradox: 'how choose / Between this Africa and the English tongue I love?' Writing in English is both inheritance and betrayal.",
+    quotes: ["how choose / Between this Africa and the English tongue I love?", "Betray them both, or give back what they give?"]
+  }, {
+    title: "The Flock",
+    angle: "The writer as observer of migrating birds — poems arrive and depart like flocks, by instinct. The writer's duty is to be ready to receive them and 'make dark symbols' that mark their passage against the blankness of history.",
+    quotes: ["I travel through such silence, making / dark symbols with this pen's print across snow", "measuring winter's augury by words / settling the branched mind like migrating birds", "flying by instinct to their secret places"]
+  }]
+}, {
+  name: "The Caribbean",
+  examAngle: "The Caribbean is not merely a setting but a way of being in the world — a place where history, nature, mythology, and vernacular culture converge. For Walcott, it is the place from which the whole of human experience becomes visible.",
+  poems: [{
+    title: "The Almond Trees",
+    angle: "The Caribbean beach as a site where the natural, the historical, and the mythological overlap. 'No visible history' is the paradox: Caribbean history has been erased but is encoded in every tree.",
+    quotes: ["no visible history", "Aged trees and oiled limbs share a common colour!", "that grieves in silence, like parental love"]
+  }, {
+    title: "A Far Cry from Africa",
+    angle: "The Caribbean is the product of the colonial encounter: the speaker exists because Africa and England collided in the Caribbean. It is a place of impossible belonging — 'divided to the vein'.",
+    quotes: ["I who am poisoned with the blood of both"]
+  }, {
+    title: "Verandah",
+    angle: "The verandah is a specifically Caribbean space — a threshold created by colonial architecture, suited to the heat and the social complexity of the plantation world.",
+    quotes: ["your house has voices, even your burnt house / cries with unguessed, lovely inheritors", "frail, ghostly loungers at verandah ends"]
+  }, {
+    title: "Mass Man",
+    angle: "Carnival is the Caribbean's most complex cultural expression: a festival that channels African, European, and indigenous traditions, born from the violence of colonialism.",
+    quotes: ["from an old gibbet my bull-whipped body swings, a metronome!", "some skull must rub its memory with ashes... someone must write your poems."]
+  }, {
+    title: "After the Storm",
+    angle: "The vernacular voice of the Caribbean — Shabine's patois — is itself a form of cultural assertion. The Caribbean archipelago is 'as many islands as the stars at night': fragmentation is abundance.",
+    quotes: ["As many islands as the stars at night", "My first friend was the sea. Now, is my last.", "Shabine sang to you from the depths of the sea."]
+  }, {
+    title: "Sea Grapes",
+    angle: "The Caribbean sea connects to all oceans and all epics. Walcott places the Caribbean at the centre of world literature: the Caribbean schooner IS Odysseus's ship.",
+    quotes: ["That sail which leans on light, / tired of islands", "the great hexameters come / to the conclusions of exhausted surf"]
+  }]
+}, {
+  name: "The Sea",
+  examAngle: "The sea is Walcott's most sustained symbol: it is both prison and freedom, exile and homecoming, the site of the Middle Passage and the route of all human wandering. It connects the Caribbean to the whole world.",
+  poems: [{
+    title: "The Castaway",
+    angle: "The sea enforces isolation — 'The horizon threads it infinitely' — but also structures time and consciousness. The castaway's relationship to the sea is his only relationship, and it is one of dependency and contemplation.",
+    quotes: ["The starved eye devours the seascape for the morsel / Of a sail.", "The silence thwanged by two waves of the sea."]
+  }, {
+    title: "Sea Grapes",
+    angle: "The Caribbean sea connects to all oceans and all epics: it is simultaneously the Aegean and the Atlantic, Homer's sea and Walcott's own. The sea's rhythm IS the rhythm of epic poetry — 'the great hexameters come / to the conclusions of exhausted surf'.",
+    quotes: ["That sail which leans on light, / tired of islands", "the great hexameters come / to the conclusions of exhausted surf", "The classics can console. But not enough."]
+  }, {
+    title: "After the Storm",
+    angle: "For Shabine, the sea is the primary relationship of his life: 'My first friend was the sea. Now, is my last.' After the storm, the sea is not conquered but accepted — it provides a 'road in white moonlight' home.",
+    quotes: ["My first friend was the sea. Now, is my last.", "the moon open / a cloud like a door, and the light over me / is a road in white moonlight taking me home."]
+  }]
+}, {
+  name: "Nature",
+  examAngle: "Nature in Walcott is never merely scenic — it is a historical text, a moral force, and the medium through which the Caribbean's past makes itself felt in the present. The landscape is always already loaded with meaning.",
+  poems: [{
+    title: "The Almond Trees",
+    angle: "The almond trees are living witnesses to the history of slavery. Their fire-cured bark is the record of what official history has erased. Nature is a historical archive.",
+    quotes: ["They're cured, / they endured their furnace.", "their leaves' broad dialect a coarse, / enduring sound / they shared together", "that grieves in silence, like parental love"]
+  }, {
+    title: "The Castaway",
+    angle: "Nature is observed with absolute precision and without sentimentality: 'In the sun, the dog's feces / Crusts, whitens like coral.' This unflinching attention strips away romantic illusion, arriving at 'We end in earth, from earth began'.",
+    quotes: ["We end in earth, from earth began.", "In our own entrails, genesis."]
+  }, {
+    title: "After the Storm",
+    angle: "After the storm, nature is the only consolation: the moon opens a cloud 'like a door', the stars provide navigation and meaning. Nature is actively hospitable — it provides a road home.",
+    quotes: ["the moon open / a cloud like a door", "Shabine sang to you from the depths of the sea."]
+  }, {
+    title: "The Season of Phantasmal Peace",
+    angle: "Nature — specifically the birds — is the active agent of redemption, doing what human history cannot. The natural world performs a collective, transcendent act of grace.",
+    quotes: ["Then all the nations of birds lifted together / the huge net of the shadows of this earth", "only this passage of phantasmal light"]
+  }, {
+    title: "The Flock",
+    angle: "The migrating birds embody nature's 'tireless, determined grace' — they follow routes older than human history, indifferent to seasons and borders. The writer aspires to this instinctive persistence.",
+    quotes: ["arrows of yearning for our different sky", "flying by instinct to their secret places"]
+  }]
+}, {
+  name: "Collective Experience",
+  examAngle: "Walcott moves between personal voice and collective witness. His poetry consistently asks: what does it mean to speak for a people, to carry a community's memory, to transform private suffering into shared meaning?",
+  poems: [{
+    title: "The Almond Trees",
+    angle: "The trees 'shared together' their suffering — the vernacular they speak is collective. The poem moves from individual observation to a wider recognition of shared historical experience, culminating in 'parental love' as collective grief.",
+    quotes: ["their leaves' broad dialect a coarse, / enduring sound / they shared together", "that grieves in silence, like parental love"]
+  }, {
+    title: "Mass Man",
+    angle: "Carnival is the community expressing itself as one body. The closing anaphora assigns the writer a collective function: to carry the community's memory. 'Someone must write your poems' — the writer serves the collective.",
+    quotes: ["'Join us,' they shout.", "some skull must rub its memory with ashes, some mind must squat down howling in your dust, someone must write your poems."]
+  }, {
+    title: "After the Storm",
+    angle: "'Shabine sang to you from the depths of the sea' — the closing line expands the personal into the collective. Shabine's experience of loss and endurance is offered as a gift to all readers.",
+    quotes: ["As many islands as the stars at night", "Shabine sang to you from the depths of the sea."]
+  }, {
+    title: "Sea Grapes",
+    angle: "'The ancient war between obsession and responsibility / will never finish' — this is not one man's conflict but every human being's. The sea-wanderer and the man walking home are universal human types.",
+    quotes: ["This brings nobody peace. The ancient war between obsession and responsibility / will never finish"]
+  }, {
+    title: "The Season of Phantasmal Peace",
+    angle: "'All the nations of birds' act together — the vision is collective, universal. Humanity is united as 'the wingless ones below', sheltered by the birds' higher-order love.",
+    quotes: ["Then all the nations of birds lifted together / the huge net of the shadows of this earth", "Love, / made seasonless"]
+  }]
+}, {
+  name: "Mythology",
+  examAngle: "Walcott uses classical mythology not to escape the Caribbean but to locate it within world literature. He appropriates the myths of Greece, Rome, and the Bible, placing Caribbean experience at the centre of a universal human story.",
+  poems: [{
+    title: "The Almond Trees",
+    angle: "Greek mythology (Daphne, hamadryads, the sacred grove) is transplanted into the Caribbean. This elevates Caribbean nature to universal significance while showing that Caribbean landscape already has its own mythological depth.",
+    quotes: ["brown daphnes, laurels", "Not as some running hamadryad's cries / rooted, broke slowly into leaf"]
+  }, {
+    title: "Sea Grapes",
+    angle: "The Odyssey is used not as an escape from the Caribbean but as its mirror. The Caribbean schooner IS Odysseus's ship; the Caribbean sea IS the Aegean. Mythology gives the present moment universal weight.",
+    quotes: ["That sail which leans on light, / tired of islands", "since Troy sighed its last flame", "the great hexameters come / to the conclusions of exhausted surf"]
+  }]
+}, {
+  name: "Personal Experience",
+  examAngle: "Walcott's poetry is often intensely personal, yet the personal is always also historical and cultural. Private experience — of guilt, love, loss, ancestry — is the point of entry into collective and universal themes.",
+  poems: [{
+    title: "A Far Cry from Africa",
+    angle: "The final turn to the first person makes clear that the poem's political crisis is also a personal identity crisis. Walcott's own identity — 'poisoned with the blood of both' — is what is at stake.",
+    quotes: ["I who am poisoned with the blood of both, / Where shall I turn, divided to the vein?", "How can I turn from Africa and live?"]
+  }, {
+    title: "The Castaway",
+    angle: "The castaway situation dramatises the poet's existential isolation — the feeling of being marooned from society and tradition. The private becomes a philosophical condition.",
+    quotes: ["The starved eye devours the seascape for the morsel / Of a sail.", "Godlike, annihilating godhead, art / And self, I abandon / Dead metaphors"]
+  }, {
+    title: "Verandah",
+    angle: "The direct address to the grandfather makes this intensely personal: 'you are the man my father loved and was'. The poet works through his ambivalence about his mixed heritage — the poem is a private act of reconciliation.",
+    quotes: ["you are the man my father loved and was.", "I stretch a darkening hand to greet them there"]
+  }, {
+    title: "After the Storm",
+    angle: "Shabine's attempt to forget happiness, his solitary reading under the lantern — the weight of 'I try to forget what happiness was' makes it feel confessional.",
+    quotes: ["I try to forget what happiness was", "My first friend was the sea. Now, is my last."]
+  }, {
+    title: "The Flock",
+    angle: "The 'I' of the poem is the poet at his desk, watching the birds. This is Walcott's most intimate self-portrait as a writer — solitary, observant, committed to a practice that outlasts any particular poem.",
+    quotes: ["I travel through such silence, making / dark symbols with this pen's print across snow"]
+  }]
+}, {
+  name: "Suffering",
+  examAngle: "Suffering in Walcott is always both historical (the suffering of the enslaved, the colonised) and personal (the poet's divided identity). He refuses to aestheticise it while insisting on the possibility of transformation.",
+  poems: [{
+    title: "Ruins of a Great House",
+    angle: "The suffering of the enslaved is held at the poem's centre: 'Some slave is rotting in this manorial lake'. The smell of dead limes makes suffering physical and inescapable in the present.",
+    quotes: ["Ablaze with rage I thought, / Some slave is rotting in this manorial lake", "A smell of dead limes quickens in the nose / The leprosy of empire."]
+  }, {
+    title: "A Far Cry from Africa",
+    angle: "Suffering is distributed across all parties — 'white child hacked in bed', Africans 'expendable as Jews', the speaker himself 'poisoned with the blood of both'. No one escapes; no side is clean.",
+    quotes: ["Corpses are scattered through a paradise.", "I who am poisoned with the blood of both"]
+  }, {
+    title: "The Almond Trees",
+    angle: "The suffering of the enslaved is encoded in the trees — the 'furnace' they endured, the grief that 'howls seaward through charred, ravaged holes'. Suffering is not past but ongoing, still present in the landscape.",
+    quotes: ["They're cured, / they endured their furnace.", "Their grief / howls seaward through charred, ravaged holes."]
+  }, {
+    title: "Mass Man",
+    angle: "The child who 'collapses, sobbing' beneath the carnival spectacle insists that suffering persists beneath the mask of celebration. Carnival metabolises suffering into collective ritual but does not dissolve it.",
+    quotes: ["But somewhere in that whirlwind's radiance a child, rigged like a bat, collapses, sobbing.", "my mania, my mania is a terrible calm."]
+  }, {
+    title: "The Season of Phantasmal Peace",
+    angle: "The poem imagines a moment when 'the huge net of the shadows' — the accumulated suffering of all history — might be briefly lifted. Suffering is acknowledged in full precisely so that the vision of its suspension can be understood.",
+    quotes: ["Then all the nations of birds lifted together / the huge net of the shadows of this earth", "this season lasted one moment, like the pause / between dusk and darkness, between fury and peace"]
+  }]
+}, {
+  name: "The Passage of Time",
+  examAngle: "Time in Walcott is not linear but layered — the past is always present in the landscape, the body, the language. History does not pass; it accumulates. Yet nature's cycles also suggest the possibility of renewal.",
+  poems: [{
+    title: "Ruins of a Great House",
+    angle: "'Deciduous beauty prospered and is gone'. The river flows on 'obliterating hurt', yet the ruins resist total erasure. Time passes but does not cleanse — it merely changes the form in which history haunts the present.",
+    quotes: ["Deciduous beauty prospered and is gone", "The river flows, obliterating hurt.", "The rot remains with us, the men are gone."]
+  }, {
+    title: "Verandah",
+    angle: "Time has transformed the burning house into starlight, coal into diamonds. The poem is an act of summoning the past into the present — the verandah is the place where time folds back on itself.",
+    quotes: ["those sparks pitched from your burning house are stars", "souls / like pressured trees bring diamonds out of coals"]
+  }, {
+    title: "Sea Grapes",
+    angle: "Time is measured in epic scale: 'Since Troy sighed its last flame'. The present Caribbean moment is a point in a line stretching back to Homer. The classics console precisely because they show this conflict is eternal.",
+    quotes: ["since Troy sighed its last flame", "The classics can console. But not enough."]
+  }, {
+    title: "After the Storm",
+    angle: "'But things must fall, and so it always was' — this quiet acceptance of change and loss is the poem's philosophical centre. Time takes happiness but leaves the stars, the sea, the moonlit road.",
+    quotes: ["But things must fall, and so it always was", "I try to forget what happiness was"]
+  }, {
+    title: "The Flock",
+    angle: "Time is geological ('the dark impartial Arctic'), evolutionary ('the mastodon'), and personal ('this journey by the wintry flare of dawn'). The writer must persist through all timescales, making marks against oblivion.",
+    quotes: ["The dark impartial Arctic, / whose glaciers encased the mastodon", "Till its annihilation may the mind / reflect his fixity through winter, tropic"]
+  }]
+}, {
+  name: "Guilt",
+  examAngle: "Guilt in Walcott is never simple — it is shared between coloniser and colonised, inherited by their descendants, and complicated by love. The poems refuse both easy condemnation and easy forgiveness.",
+  poems: [{
+    title: "Ruins of a Great House",
+    angle: "Guilt operates at multiple levels: the colonisers' guilt ('from guilt, perhaps'), the speaker's own discomfort, and his troubling compassion for the oppressors ('Albion too was once a colony'). The poem refuses moral simplicity.",
+    quotes: ["From guilt, perhaps, but not from the worm's rent", "Ablaze with rage I thought, / Some slave is rotting in this manorial lake", "But still the coal of my compassion fought"]
+  }, {
+    title: "Verandah",
+    angle: "The grandfather's guilt is the guilt of the coloniser; the poet inherits this guilt along with the love that accompanied it. Yet the poem moves towards something beyond guilt: 'Whatever love you suffered makes amends within them, father'.",
+    quotes: ["From guilt, perhaps, but not from the worm's rent", "you are the man my father loved and was.", "those sparks pitched from your burning house are stars"]
+  }]
+}, {
+  name: "Life and Death",
+  examAngle: "Walcott faces death unflinchingly — in the natural cycle, in the human body, in the history of violence. Yet death is also always the precondition of new life: the burnt house generates stars, coal generates diamonds.",
+  poems: [{
+    title: "The Castaway",
+    angle: "The poem moves through its meditation to arrive at the most fundamental fact: 'We end in earth, from earth began'. The natural cycle — sand, coral, decomposition — makes this not tragic but simply true.",
+    quotes: ["We end in earth, from earth began.", "In our own entrails, genesis.", "Cracking a sea-louse, I make thunder split."]
+  }, {
+    title: "After the Storm",
+    angle: "'But things must fall, and so it always was' — this quiet acceptance of mortality and loss is at the poem's heart. The poem's peace is achieved not by denying death but by accepting its place in the natural order.",
+    quotes: ["But things must fall, and so it always was", "My first friend was the sea. Now, is my last."]
+  }, {
+    title: "The Season of Phantasmal Peace",
+    angle: "The poem is situated 'between fury and peace', 'between dusk and darkness' — at the threshold of life and death. The birds' act of lifting the net of shadows is a vision of what lies beyond mortality, even if only for a moment.",
+    quotes: ["this season lasted one moment, like the pause / between dusk and darkness, between fury and peace", "Love, / made seasonless"]
+  }]
+}];
+function ThemeBadge({
+  theme,
+  onClick,
+  active
+}) {
+  const c = themeColors[theme] || {
+    bg: "#222",
+    text: "#aaa",
+    border: "#444"
+  };
+  return /*#__PURE__*/React.createElement("button", {
+    onClick: onClick,
+    style: {
+      display: "inline-block",
+      fontSize: "0.7rem",
+      fontWeight: "600",
+      padding: "3px 10px",
+      borderRadius: 20,
+      marginRight: 5,
+      marginBottom: 6,
+      background: active ? c.text : c.bg,
+      color: active ? c.bg : c.text,
+      border: `1px solid ${c.border}`,
+      cursor: "pointer",
+      fontFamily: "Georgia, serif",
+      transition: "all 0.15s"
+    }
+  }, theme);
+}
+function ThemeGuideView() {
+  const [selTheme, setSelTheme] = useState(0);
+  const [expandedPoem, setExpandedPoem] = useState(null);
+  const theme = themeGuide[selTheme];
+  const c = themeColors[theme.name] || {
+    bg: "#222",
+    text: "#aaa",
+    border: "#444"
+  };
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      height: "calc(100vh - 100px)"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 185,
+      flexShrink: 0,
+      background: "#080d10",
+      borderRight: "1px solid #1a2a1a",
+      overflowY: "auto"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: "10px 13px 6px",
+      fontSize: "0.6rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.15em",
+      color: "#556644"
+    }
+  }, "Th\xE8mes pour l'exam"), themeGuide.map((t, i) => {
+    const tc = themeColors[t.name] || {
+      bg: "#222",
+      text: "#aaa",
+      border: "#444"
+    };
+    return /*#__PURE__*/React.createElement("button", {
+      key: t.name,
+      onClick: () => {
+        setSelTheme(i);
+        setExpandedPoem(null);
+      },
+      style: {
+        display: "block",
+        width: "100%",
+        textAlign: "left",
+        padding: "8px 13px",
+        background: selTheme === i ? tc.bg : "transparent",
+        borderLeft: selTheme === i ? "3px solid " + tc.border : "3px solid transparent",
+        color: selTheme === i ? tc.text : "#6a8a6a",
+        fontSize: "0.74rem",
+        lineHeight: 1.3,
+        cursor: "pointer",
+        fontFamily: "Georgia,serif",
+        border: "none"
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontWeight: selTheme === i ? "bold" : "normal"
+      }
+    }, t.name), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: "0.62rem",
+        color: selTheme === i ? tc.text : "#3a5a3a",
+        opacity: 0.7,
+        marginTop: 1
+      }
+    }, t.poems.length, " po\xE8mes"));
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      overflowY: "auto"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: "14px 18px 12px",
+      background: c.bg,
+      borderBottom: "1px solid " + c.border,
+      position: "sticky",
+      top: 0,
+      zIndex: 10
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: "1rem",
+      fontWeight: "bold",
+      color: c.text
+    }
+  }, theme.name), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: "0.62rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.12em",
+      color: c.text,
+      opacity: 0.6,
+      marginTop: 2
+    }
+  }, theme.poems.length, " po\xE8mes \xB7 Guide d'exam")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: "16px 18px"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginBottom: 20,
+      background: c.bg,
+      border: "1px solid " + c.border,
+      borderRadius: 8,
+      padding: "13px 15px"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: "0.62rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.15em",
+      color: c.text,
+      opacity: 0.7,
+      marginBottom: 6
+    }
+  }, "\uD83C\uDFAF Angle d'attaque si la probl\xE9matique porte sur ce th\xE8me"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      color: c.text,
+      fontSize: "0.85rem",
+      lineHeight: 1.75,
+      fontStyle: "italic"
+    }
+  }, theme.examAngle)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: "0.62rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.15em",
+      color: "#c8a96e",
+      marginBottom: 10,
+      paddingBottom: 5,
+      borderBottom: "1px solid #2a1e0a"
+    }
+  }, "Po\xE8mes \xE0 mobiliser \u2014 clique pour d\xE9velopper"), theme.poems.map((p, i) => {
+    const isOpen = expandedPoem === i;
+    return /*#__PURE__*/React.createElement("div", {
+      key: p.title,
+      style: {
+        marginBottom: 8
+      }
+    }, /*#__PURE__*/React.createElement("button", {
+      onClick: () => setExpandedPoem(isOpen ? null : i),
+      style: {
+        width: "100%",
+        textAlign: "left",
+        padding: "10px 14px",
+        background: isOpen ? "#0f1f10" : "#0a1205",
+        border: "1px solid " + (isOpen ? "#3a6030" : "#1a2a15"),
+        borderRadius: isOpen ? "8px 8px 0 0" : 8,
+        color: "#f0e0b0",
+        cursor: "pointer",
+        fontFamily: "Georgia,serif",
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center"
+      }
+    }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontWeight: "bold",
+        fontSize: "0.85rem"
+      }
+    }, p.title), !isOpen && /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: "#6a9a6a",
+        fontSize: "0.75rem",
+        marginLeft: 10,
+        fontStyle: "italic"
+      }
+    }, p.angle.slice(0, 60), "\u2026")), /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: "#c8a96e",
+        fontSize: "0.8rem"
+      }
+    }, isOpen ? "▲" : "▼")), isOpen && /*#__PURE__*/React.createElement("div", {
+      style: {
+        background: "#0a1508",
+        border: "1px solid #1e3020",
+        borderTop: "none",
+        borderRadius: "0 0 8px 8px",
+        padding: "13px 15px"
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        marginBottom: 12
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: "0.6rem",
+        textTransform: "uppercase",
+        letterSpacing: "0.12em",
+        color: "#c8a96e",
+        marginBottom: 5
+      }
+    }, "Angle \xE0 d\xE9velopper dans ce po\xE8me"), /*#__PURE__*/React.createElement("div", {
+      style: {
+        color: "#b8d0a8",
+        fontSize: "0.83rem",
+        lineHeight: 1.7
+      }
+    }, p.angle)), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: "0.6rem",
+        textTransform: "uppercase",
+        letterSpacing: "0.12em",
+        color: "#c8a96e",
+        marginBottom: 5
+      }
+    }, "Citations \xE0 utiliser"), p.quotes.map((q, qi) => /*#__PURE__*/React.createElement("div", {
+      key: qi,
+      style: {
+        borderLeft: "3px solid #c8a96e",
+        paddingLeft: 11,
+        marginBottom: 8,
+        color: "#f0e8d0",
+        fontSize: "0.83rem",
+        fontStyle: "italic",
+        lineHeight: 1.6
+      }
+    }, "\"", q, "\"")))));
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: 20,
+      background: "#080e08",
+      border: "1px dashed #2a3a20",
+      borderRadius: 8,
+      padding: "13px 15px"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: "0.6rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.12em",
+      color: "#c8a96e",
+      marginBottom: 6
+    }
+  }, "\uD83D\uDCA1 Ordre conseill\xE9 pour l'examen"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      flexWrap: "wrap",
+      gap: 6
+    }
+  }, theme.poems.map((p, i) => /*#__PURE__*/React.createElement("div", {
+    key: p.title,
+    style: {
+      background: "#0f1f10",
+      border: "1px solid #2a4020",
+      borderRadius: 6,
+      padding: "5px 10px",
+      fontSize: "0.72rem",
+      color: "#a0c890"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: "#c8a96e",
+      fontWeight: "bold"
+    }
+  }, i + 1, "."), " ", p.title)))))));
+}
+export default function WalcottRevision() {
+  const [view, setView] = useState("poems"); // "poems" | "themes"
+  const [sel, setSel] = useState(0);
+  const [tab, setTab] = useState("overview");
+  const [activeTheme, setActiveTheme] = useState(null);
+  const poem = poems[sel];
+  const tabs = [{
+    id: "overview",
+    label: "Overview"
+  }, {
+    id: "ideas",
+    label: "Main Ideas"
+  }, {
+    id: "techniques",
+    label: "Techniques"
+  }, {
+    id: "themes",
+    label: "Thèmes ★"
+  }, {
+    id: "quotes",
+    label: "Quotes"
+  }, {
+    id: "form",
+    label: "Forme"
+  }];
+  const handlePoem = i => {
+    setSel(i);
+    setTab("overview");
+    setActiveTheme(null);
+  };
+  const handleTheme = n => setActiveTheme(activeTheme === n ? null : n);
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontFamily: "Georgia,'Times New Roman',serif",
+      background: "#0d1117",
+      minHeight: "100vh",
+      color: "#e2d9c5"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: "linear-gradient(135deg,#1a0a00,#0d1117 70%)",
+      borderBottom: "1px solid #2a1e0a",
+      padding: "14px 20px 10px"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: "0.62rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.15em",
+      color: "#c8a96e",
+      marginBottom: 2
+    }
+  }, "BFI English \xB7 R\xE9visions Bac \xC9crit"), /*#__PURE__*/React.createElement("h1", {
+    style: {
+      fontSize: "1.2rem",
+      fontWeight: "bold",
+      color: "#f0e0b0",
+      margin: 0
+    }
+  }, "Derek Walcott \u2014 Selected Poems"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      gap: 6,
+      marginTop: 10
+    }
+  }, ["poems", "themes"].map(v => /*#__PURE__*/React.createElement("button", {
+    key: v,
+    onClick: () => setView(v),
+    style: {
+      padding: "5px 16px",
+      fontSize: "0.72rem",
+      fontFamily: "Georgia,serif",
+      background: view === v ? "#c8a96e" : "#1a1a0a",
+      color: view === v ? "#0d1117" : "#c8a96e",
+      border: "1px solid #c8a96e",
+      borderRadius: 20,
+      cursor: "pointer",
+      fontWeight: view === v ? "bold" : "normal"
+    }
+  }, v === "poems" ? "📖 Poèmes" : "🎯 Thèmes Exam")))), view === "poems" && /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      height: "calc(100vh - 100px)"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 185,
+      flexShrink: 0,
+      background: "#080d10",
+      borderRight: "1px solid #1a2a1a",
+      overflowY: "auto"
+    }
+  }, poems.map((p, i) => /*#__PURE__*/React.createElement("button", {
+    key: p.id,
+    onClick: () => handlePoem(i),
+    style: {
+      display: "block",
+      width: "100%",
+      textAlign: "left",
+      padding: "9px 13px",
+      background: sel === i ? "#0f1f10" : "transparent",
+      borderLeft: sel === i ? "3px solid #c8a96e" : "3px solid transparent",
+      color: sel === i ? "#f0e0b0" : "#6a8a6a",
+      fontSize: "0.75rem",
+      lineHeight: 1.3,
+      cursor: "pointer",
+      fontFamily: "Georgia,serif",
+      border: "none"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontWeight: sel === i ? "bold" : "normal"
+    }
+  }, p.title), /*#__PURE__*/React.createElement("div", {
+    style: {
+      color: "#3a5a3a",
+      fontSize: "0.62rem",
+      marginTop: 1
+    }
+  }, p.year)))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      overflowY: "auto"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: "12px 18px 8px",
+      background: "#0a1508",
+      borderBottom: "1px solid #1a3020",
+      position: "sticky",
+      top: 0,
+      zIndex: 10
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: "0.95rem",
+      fontWeight: "bold",
+      color: "#f0e0b0"
+    }
+  }, poem.title), /*#__PURE__*/React.createElement("div", {
+    style: {
+      color: "#c8a96e",
+      fontSize: "0.68rem",
+      fontStyle: "italic"
+    }
+  }, poem.year)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      background: "#080d10",
+      borderBottom: "1px solid #1a2a1a",
+      overflowX: "auto"
+    }
+  }, tabs.map(t => /*#__PURE__*/React.createElement("button", {
+    key: t.id,
+    onClick: () => {
+      setTab(t.id);
+      setActiveTheme(null);
+    },
+    style: {
+      padding: "7px 12px",
+      fontSize: "0.68rem",
+      fontFamily: "Georgia,serif",
+      color: tab === t.id ? "#c8a96e" : "#3a5a3a",
+      background: "transparent",
+      border: "none",
+      borderBottom: tab === t.id ? "2px solid #c8a96e" : "2px solid transparent",
+      cursor: "pointer",
+      whiteSpace: "nowrap",
+      fontWeight: tab === t.id ? "bold" : "normal"
+    }
+  }, t.label))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: "16px 18px"
+    }
+  }, tab === "overview" && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginBottom: 20
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: "0.62rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.15em",
+      color: "#c8a96e",
+      marginBottom: 8,
+      paddingBottom: 5,
+      borderBottom: "1px solid #2a1e0a"
+    }
+  }, "Vue d'ensemble"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      color: "#d4c9a8",
+      fontSize: "0.87rem",
+      lineHeight: 1.75,
+      fontStyle: "italic",
+      margin: 0
+    }
+  }, poem.overview)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginBottom: 20
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: "0.62rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.15em",
+      color: "#c8a96e",
+      marginBottom: 8,
+      paddingBottom: 5,
+      borderBottom: "1px solid #2a1e0a"
+    }
+  }, "Th\xE8mes"), /*#__PURE__*/React.createElement("div", null, poem.themes.map(t => /*#__PURE__*/React.createElement(ThemeBadge, {
+    key: t.name,
+    theme: t.name
+  })))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: "0.62rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.15em",
+      color: "#c8a96e",
+      marginBottom: 8,
+      paddingBottom: 5,
+      borderBottom: "1px solid #2a1e0a"
+    }
+  }, "Citations cl\xE9s"), poem.quotes.slice(0, 3).map((q, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      borderLeft: "3px solid #c8a96e",
+      paddingLeft: 12,
+      marginBottom: 10,
+      color: "#f0e8d0",
+      fontSize: "0.84rem",
+      fontStyle: "italic",
+      lineHeight: 1.6
+    }
+  }, "\"", q, "\"")))), tab === "ideas" && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: "0.62rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.15em",
+      color: "#c8a96e",
+      marginBottom: 10,
+      paddingBottom: 5,
+      borderBottom: "1px solid #2a1e0a"
+    }
+  }, "Id\xE9es principales"), poem.mainIdeas.map((item, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      marginBottom: 11,
+      background: "#0a1508",
+      borderRadius: 6,
+      padding: "11px 13px",
+      border: "1px solid #1a3020"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      color: "#c8a96e",
+      fontWeight: "bold",
+      fontSize: "0.84rem",
+      marginBottom: 5
+    }
+  }, item.idea), /*#__PURE__*/React.createElement("div", {
+    style: {
+      color: "#9ab890",
+      fontSize: "0.81rem",
+      lineHeight: 1.65
+    }
+  }, item.detail)))), tab === "techniques" && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: "0.62rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.15em",
+      color: "#c8a96e",
+      marginBottom: 10,
+      paddingBottom: 5,
+      borderBottom: "1px solid #2a1e0a"
+    }
+  }, "Techniques litt\xE9raires"), poem.techniques.map((t, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      marginBottom: 11,
+      background: "#0e0a18",
+      borderRadius: 6,
+      padding: "11px 13px",
+      border: "1px solid #2a1e3a"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      color: "#a890e0",
+      fontWeight: "bold",
+      fontSize: "0.84rem",
+      marginBottom: 5
+    }
+  }, t.name), /*#__PURE__*/React.createElement("div", {
+    style: {
+      color: "#c8c0f0",
+      fontSize: "0.79rem",
+      fontStyle: "italic",
+      marginBottom: 5,
+      lineHeight: 1.5
+    }
+  }, "Ex : \"", t.example, "\""), /*#__PURE__*/React.createElement("div", {
+    style: {
+      color: "#7a70a0",
+      fontSize: "0.79rem",
+      lineHeight: 1.6
+    }
+  }, "\u2192 ", t.effect))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: "0.62rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.15em",
+      color: "#c8a96e",
+      margin: "16px 0 10px",
+      paddingBottom: 5,
+      borderBottom: "1px solid #2a1e0a"
+    }
+  }, "M\xE9taphores cl\xE9s"), poem.metaphors.map((m, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      marginBottom: 10,
+      background: "#180e04",
+      borderRadius: 6,
+      padding: "11px 13px",
+      border: "1px solid #3a200a"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      color: "#e0a060",
+      fontWeight: "bold",
+      fontSize: "0.84rem",
+      fontStyle: "italic",
+      marginBottom: 5
+    }
+  }, m.metaphor), /*#__PURE__*/React.createElement("div", {
+    style: {
+      color: "#b07840",
+      fontSize: "0.79rem",
+      lineHeight: 1.6
+    }
+  }, "\u2192 ", m.analysis)))), tab === "themes" && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: "0.62rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.15em",
+      color: "#c8a96e",
+      marginBottom: 8,
+      paddingBottom: 5,
+      borderBottom: "1px solid #2a1e0a"
+    }
+  }, "Clique sur un th\xE8me pour voir l'explication"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginBottom: 14
+    }
+  }, poem.themes.map(t => /*#__PURE__*/React.createElement(ThemeBadge, {
+    key: t.name,
+    theme: t.name,
+    onClick: () => handleTheme(t.name),
+    active: activeTheme === t.name
+  }))), activeTheme && (() => {
+    const td = poem.themes.find(t => t.name === activeTheme);
+    const c = themeColors[activeTheme] || {
+      bg: "#222",
+      text: "#aaa",
+      border: "#444"
+    };
+    return td ? /*#__PURE__*/React.createElement("div", {
+      style: {
+        background: c.bg,
+        border: `1px solid ${c.border}`,
+        borderRadius: 8,
+        padding: "14px 16px",
+        marginBottom: 20
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        color: c.text,
+        fontWeight: "bold",
+        fontSize: "0.88rem",
+        marginBottom: 8
+      }
+    }, activeTheme), /*#__PURE__*/React.createElement("div", {
+      style: {
+        color: c.text,
+        fontSize: "0.83rem",
+        lineHeight: 1.75,
+        opacity: 0.92
+      }
+    }, td.explanation)) : null;
+  })(), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: "0.62rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.15em",
+      color: "#c8a96e",
+      marginBottom: 10,
+      paddingBottom: 5,
+      borderBottom: "1px solid #2a1e0a"
+    }
+  }, "Toutes les explications"), poem.themes.map(t => {
+    const c = themeColors[t.name] || {
+      bg: "#222",
+      text: "#aaa",
+      border: "#444"
+    };
+    return /*#__PURE__*/React.createElement("div", {
+      key: t.name,
+      style: {
+        marginBottom: 9,
+        background: c.bg,
+        border: `1px solid ${c.border}`,
+        borderRadius: 6,
+        padding: "10px 13px"
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        color: c.text,
+        fontWeight: "bold",
+        fontSize: "0.81rem",
+        marginBottom: 4
+      }
+    }, t.name), /*#__PURE__*/React.createElement("div", {
+      style: {
+        color: c.text,
+        fontSize: "0.79rem",
+        lineHeight: 1.7,
+        opacity: 0.9
+      }
+    }, t.explanation));
+  })), tab === "quotes" && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: "0.62rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.15em",
+      color: "#c8a96e",
+      marginBottom: 10,
+      paddingBottom: 5,
+      borderBottom: "1px solid #2a1e0a"
+    }
+  }, "Citations essentielles"), poem.quotes.map((q, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      borderLeft: "3px solid #c8a96e",
+      paddingLeft: 13,
+      marginBottom: 11,
+      color: "#f0e8d0",
+      fontSize: "0.86rem",
+      fontStyle: "italic",
+      lineHeight: 1.65
+    }
+  }, "\"", q, "\""))), tab === "form" && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: "0.62rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.15em",
+      color: "#c8a96e",
+      marginBottom: 10,
+      paddingBottom: 5,
+      borderBottom: "1px solid #2a1e0a"
+    }
+  }, "Forme & Structure"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: "#080e08",
+      borderRadius: 6,
+      padding: "13px 15px",
+      border: "1px solid #1a3020",
+      color: "#9ab890",
+      fontSize: "0.84rem",
+      lineHeight: 1.8
+    }
+  }, poem.form))))), view === "themes" && /*#__PURE__*/React.createElement(ThemeGuideView, null));
+}
+
+    // Mount the app
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(React.createElement(WalcottRevision, null));
+  </script>
+</body>
+</html>
